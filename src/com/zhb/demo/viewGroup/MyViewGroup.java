@@ -100,7 +100,7 @@ public class MyViewGroup extends ViewGroup{
 	/** 
      * 为控件添加边框 
      */  
-    @Override  
+    /*@Override  
     protected void dispatchDraw(Canvas canvas) {  
         // 获取布局控件宽高  
         int width = getWidth();  
@@ -118,6 +118,6 @@ public class MyViewGroup extends ViewGroup{
         canvas.drawRect(mRect, mPaint);  
         // 最后必须调用父类的方法  
         super.dispatchDraw(canvas);  
-    }  
+    }  */
 	
 }

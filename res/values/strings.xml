@@ -3,5 +3,18 @@
 
     <string name="hello">Hello World, HelloAndroidActivity!</string>
     <string name="app_name">HelloAndroid</string>
-
+	<string name="lifecycle">lifecycle</string>
+    <string name="userAndRole">用户与角色接口</string>
+    <string name="pay">支付接口</string>
+    <string name="statistic">数据统计接口</string>
+    <string name="extend">扩展接口</string>
+    <string name="lifecycle_oncreate">oncreate</string>
+    <string name="lifecycle_onstart">onstart</string>
+    <string name="userAndRole_login">登录</string>
+    <string name="userAndRole_logout">登出</string>
+    <string name="userAndRole_exit">退出游戏</string>
+    <string name="userAndRole_onEnterGame">进入游戏</string>
+    <string name="userAndRole_onCreateRole">创建角色</string>
+    <string name="userAndRole_onRoleLevelup">角色升级</string>
+    <string name="pay_pay">支付</string>  
 </resources>

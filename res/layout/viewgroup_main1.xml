@@ -8,13 +8,14 @@
 	    android:id="@+id/myviewgroup"
 	    android:layout_width="match_parent"
 	    android:layout_height="match_parent">
-	   <!--  <View android:id="@+id/view1"
+	    
+	    <!-- <View android:id="@+id/view1"
         android:layout_width="100dp"
         android:layout_height="100dp"
         android:layout_margin="10dp"
         android:background="@android:color/black"/>
     
-	    <View
+	     <View
 	        android:layout_width="100dp"
 	        android:layout_height="100dp"
 	        android:layout_margin="10dp"

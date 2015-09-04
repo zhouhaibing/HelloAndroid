@@ -15,16 +15,15 @@ public class ViewGroupDemo extends Activity{
 	protected void onCreate(Bundle savedInstanceState) {
 		// TODO Auto-generated method stub
 		super.onCreate(savedInstanceState);
-		/*LinearLayout outerLL = new LinearLayout(this);
-		outerLL.addView(littleWidget());*/
-
-		/*MyViewGroup vg = new MyViewGroup(this);
-		Button btn = new Button(this);
-		btn.setText("hello");
-		vg.addView(btn);
-		setContentView(vg);*/
 		
-		setContentView(R.layout.viewgroup_main1);
+		/*LinearLayout outerLL = new LinearLayout(this);
+		outerLL.setBackgroundColor(Color.BLUE);
+		outerLL.addView(littleWidget());
+		setContentView(outerLL);*/
+		
+		
+		//myviewgroup button
+		/*setContentView(R.layout.viewgroup_main1);
 		MyViewGroup vg = (MyViewGroup)findViewById(R.id.myviewgroup);
 		vg.setBackgroundColor(Color.GRAY);
 		
@@ -37,36 +36,23 @@ public class ViewGroupDemo extends Activity{
 			lp.setMargins(20, 80, 20, 20);
 			btn.setLayoutParams(lp);
             vg.addView(btn);  
-        }
+        }*/
+		
+		
+		//multi viewgroup in xml
+		setContentView(R.layout.viewgroup_main2);
+		
 	}
 	
-	public ViewGroup viewGroup(){
-		ViewGroup vg = new MyViewGroup(this);
-		ImageView iv1 = new ImageView(this);
-		iv1.setBackgroundResource(R.drawable.ic_launcher);
-		vg.setBackgroundColor(Color.GREEN);
-		
-		Button btn = new Button(this);
-		btn.setText("hello");
-		btn.setBackgroundColor(Color.RED);
-		
-		LinearLayout ll = new LinearLayout(this);
-		ll.setBackgroundColor(Color.BLUE);
-		ll.setOrientation(LinearLayout.HORIZONTAL);
-		ll.addView(btn);
-		ll.addView(iv1);
-		
-		vg.addView(ll);
-		return vg;
-	}
 	
-	public LinearLayout littleWidget(){//the outer layout of ll is necessary
+	public LinearLayout littleWidget(){//the outer layout of ll is necessary,if not,the height of layoutParams is not effect
 		LinearLayout ll = new LinearLayout(this);
 		LinearLayout.LayoutParams lp = new LinearLayout.LayoutParams(LayoutParams.MATCH_PARENT,
 				LayoutParams.WRAP_CONTENT);
 		ll.setLayoutParams(lp);
 		ll.setOrientation(LinearLayout.HORIZONTAL);
 		ll.setBackgroundColor(Color.WHITE);
+		
 		ImageView iv = new ImageView(this);
 		iv.setMinimumHeight(52);
 		iv.setBackgroundResource(R.drawable.ic_launcher);

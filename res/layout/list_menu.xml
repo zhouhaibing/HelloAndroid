@@ -1,0 +1,96 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical" 
+        android:textAllCaps="false" 
+        android:padding="20dp">
+          
+        <!-- <TextView android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="@string/userAndRole" 
+            android:gravity="center_horizontal"
+            android:textSize="20sp"
+            android:textStyle="bold" 
+            />
+        <View  
+		   android:layout_width="fill_parent"  
+		    android:layout_height="3px" 
+		   android:background="?android:attr/listDivider"  
+		/>  -->
+        <com.zhb.demo.viewGroup.MyViewGroup
+            android:id="@+id/myview1"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" >
+            <Button
+            android:id="@+id/userAndRole_login"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/userAndRole_login" 
+            android:layout_marginRight="15dp" />
+
+	         <Button
+	            android:id="@+id/userAndRole_logout"
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:text="@string/userAndRole_logout" 
+	            android:layout_marginRight="15dp" />
+	        <Button
+	            android:id="@+id/userAndRole_exit"
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:text="@string/userAndRole_exit" 
+	            android:layout_marginRight="15dp" />
+	        <Button
+	            android:id="@+id/userAndRole_onEnterGame"
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:text="@string/userAndRole_onEnterGame" 
+	            android:layout_marginRight="15dp" />
+	        <Button
+	            android:id="@+id/userAndRole_onCreateRole"
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:text="@string/userAndRole_onCreateRole" 
+	            android:layout_marginRight="15dp" />
+	        <Button
+	            android:id="@+id/userAndRole_onRoleLevelup"
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:text="@string/userAndRole_onRoleLevelup" 
+	             />
+        </com.zhb.demo.viewGroup.MyViewGroup>
+        
+        <TextView android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/pay" 
+            android:gravity="center_horizontal"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            />
+        <View  
+		   android:layout_width="fill_parent"  
+		    android:layout_height="3px" 
+		   android:background="?android:attr/listDivider"  
+		/>  
+        <com.zhb.demo.viewGroup.MyViewGroup 
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingTop="10dp" >
+            <Button
+            android:id="@+id/pay_pay"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/pay_pay"
+            android:layout_marginRight="30dp" />
+
+        </com.zhb.demo.viewGroup.MyViewGroup>
+        
+        
+    </LinearLayout>
+    
+    </ScrollView>
